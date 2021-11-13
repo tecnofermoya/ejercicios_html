@@ -1,1 +1,1 @@
-# Ejercicio HTML | TIC2
+# Ejercicios HTML | TIC2
