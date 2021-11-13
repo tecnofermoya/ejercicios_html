@@ -1,0 +1,22 @@
+html {
+    background: #cdcdcd;
+}
+
+body {
+    background: #efefef;
+    font-family: 'Georama', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: justify;
+}
+
+p span {
+    color: blue;
+    text-align: center;
+}
+
+.centrado {
+    text-align: center;
+}

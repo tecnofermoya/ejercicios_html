@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Sistemas de numeración</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="home">SISTEMAS DE NUMERACIÓN</h1>
+        <p>binario, octal y hexadecimal</p>
+
+        <ul>
+            <li><a href="#uno">Sistemas de numeración</a></li>
+            <li>Sistema de numeración decimal</li>
+            <li>Sistema de numeración binario</li>
+            <ul>
+                <li>Conversión entre números decimales y binarios</li>
+                <li>El tamaño de las cifras binarias</li>
+                <li>Conversión de binario a decimal</li>
+            </ul>
+            <li>Sistema de numeración octal</li>
+            <ul>
+                <li>Conversión de un número decimal a octal</li>
+                <li>Conversión octal a decimal</li>
+            </ul>    
+            <li>Sistema de numeración hexadecimal</li>
+            <ul>
+                <li>Conversión de números binarios a octales y viceversa</li>
+                <li>Conversión de números binarios a hexadecimales y viceversa</li>
+            </ul>
+        </ul>
+
+        <h1 id="uno">Sistemas de numeración <a href="#home">Inicio</a></h1>
+        <p>Un sistema de numeración es un conjunto de símbolos y reglas que permiten representar datos numéricos. Los sistemas de numeración actuales son sistemas posicionales, que se caracterizan porque <b>un símbolo tiene distinto valor según la posición que ocupa en la cifra.</b></p>
+
+        <h1 id="dos">Sistema de numeración decimal:</h1>
+        <p>El sistema de numeración que utilizamos habitualmente es el <b>decimal</b>, que se compone de diez símbolos o dígitos (0, 1, 2, 3, 4, 5, 6, 7, 8 y 9) a los que otorga un valor <b>dependiendo de la posición</b> que ocupen en la cifra: unidades, decenas, centenas, millares, etc.</p>
+        <p>El valor de cada dígito está asociado al de una potencia de base 10, número que coincide con la cantidad de símbolos o dígitos del sistema decimal, y un exponente igual a la posición que ocupa el dígito menos uno, contando desde la derecha.</p>
+        <p>En el sistema decimal el número <b>528</b>, por ejemplo, significa:</p>
+        <p class="centrado">
+            <span>5 centenas + 2 decenas + 8 unidades, es decir:</span>
+        </p>
+        <p class="centrado">
+            <span><b>5*10<sup>2</sup> + 2*10<sup>1</sup> + 8*10<sup>0</sup></b> o, lo que es lo mismo:</span>
+        </p>
+        <p class="centrado">
+            <span><b>500 + 20 + 8 = 528</b></span>
+        </p>
+        <p>En el caso de números con decimales, la situación es análoga aunque, en este caso, algunos exponentes de las potencias serán negativos, concretamente el de los dígitos colocados a la derecha del separador decimal. Por ejemplo, el número <b>8245,97</b> se calcularía como:</p>
+        <p>8 millares + 2 centenas + 4 decenas + 5 unidades + 9 décimos + 7 céntimos</p>
+        <p><b>8*10<sup>3</sup> + 2*10<sup>2</sup> + 4*10<sup>1</sup> + 5*10<sup>0</sup> + 9*10<sup>-1</sup> + 7*10<sup>-2</sup></b>, es decir:</p>
+        <p><b>8000 + 200 + 40 + 5 + 0,9 + 0,07 = 8245,97</b></p>
+       
+        <h1 id="tres">Sistema de numeración binario.</h1>
+        <p>El sistema de numeración binario utiliza sólo dos dígitos, el <b>cero</b> (0) y el <b>uno</b> (1).</p>
+        <p>En una cifra binaria, cada dígito tiene distinto valor dependiendo de la posición que ocupe. El valor de cada posición es el de una potencia de <b>base 2</b>, elevada a un exponente igual a la posición del dígito menos uno. Se puede observar que, tal y como ocurría con el sistema decimal, la base de la potencia coincide con la cantidad de dígitos utilizados (2) para representar los números.</p>
+        <p>De acuerdo con estas reglas, el número binario <b>1011</b> tiene un valor que se calcula así:</p>
+        <p><b>1*2<sup>3</sup> + 0*2<sup>2</sup> + 1*2<sup>1</sup> + 1*2<sup>0</sup></b>, es decir:</p>
+        <p><b>8 + 0 + 2 + 1 = 11</b></p>
+        <p>y para expresar que ambas cifras describen la misma cantidad lo escribimos así:</p>
+        <p><b>1011<sub>2</sub> = 11<sub>10</sub></b></p>
+        
+        <h2>Conversión entre números decimales y binarios</h2>
+        
+        <p>Convertir un número decimal al sistema binario es muy sencillo: basta con realizar <b>divisiones sucesivas por 2</b> y escribir los restos obtenidos en cada división <b>en orden inverso</b> al que han sido obtenidos. Por ejemplo, para convertir al sistema binario el número <b>77<sub>10</sub></b> haremos una serie de divisiones que arrojarán los restos siguientes:</p>
+        <p><b>77 : 2 = 38</b> | Resto: <b>1</b></p>
+        <p><b>38 : 2 = 19</b> | Resto: <b>0</b></p>
+        <p><b>19 : 2 = 9</b> | Resto: <b>1</b></p>
+        <p><b>9 : 2 = 4</b> | Resto: <b>1</b></p>
+        <p><b>4 : 2 = 2</b> | Resto: <b>0</b></p>
+        <p><b>2 : 2 = 1</b> | Resto: <b>0</b></p>
+        <p><b>1 : 2 = 0</b> | Resto: <b>1</b></p>
+        <p>y, tomando los restos en orden inverso obtenemos la cifra binaria:</p>
+        <p><b>77<sub>10</sub> = 1001101<sub>2</sub></b></p>
+       
+        <h3>Ejercicio 1:</h3>
+        <p>Expresa, en código binario, los números decimales siguientes: <b>191, 25, 67, 99, 135, 276.</b></p>
+
+        <h2>El tamaño de las cifras binarias</h2>
+        <p>La cantidad de dígitos necesarios para representar un número en el sistema binario es mayor que en el sistema decimal. En el ejemplo del párrafo anterior, para representar el número 77, que en el sistema decimal está compuesto tan sólo por dos dígitos, han hecho falta siete dígitos en binario.</p>
+
+        <p>Para representar números grandes harán falta muchos más dígitos. Por ejemplo, para representar números mayores de 255 se necesitarán más de ocho dígitos, porque 2<sup>8</sup> = 256 y podemos afirmar, por tanto, que 255 es el número más grande que puede representarse con ocho dígitos.</p>
+
+        <p>Como regla general, con n dígitos binarios pueden representarse un máximo de 2<sup>n</sup>, números. El número más grande que puede escribirse con n dígitos es una unidad menos, es decir, 2<sup>n</sup> – 1. Con cuatro bits, por ejemplo, pueden representarse un total de 16 números, porque 2<sup>4</sup> = 16 y el mayor de dichos números es el 15, porque 2<sup>4</sup>-1 = 15.</p>
+
+        <h3>Ejercicio 2:</h3>
+        <p>Averigua cuántos números pueden representarse con 8, 10, 16 y 32 bits y cuál es el número más grande que puede escribirse en cada caso.</p>
+
+        <h3>Ejercicio 3:</h3>
+        <p>Dados dos números binarios: 01001000 y 01000100 ¿Cuál de ellos es el mayor?. ¿Podrías compararlos sin necesidad de convertirlos al sistema decimal?.</p>
+
+        <h2>Conversión de binario a decimal</h2>
+        <p>El proceso para convertir un número del sistema binario al decimal es aún más sencillo; basta con desarrollar el número, teniendo en cuenta el valor de cada dígito en su posición, que es el de una potencia de 2, cuyo exponente es 0 en el bit situado más a la derecha, y se incrementa en una unidad según vamos avanzando posiciones hacia la izquierda.</p>
+
+        <p>Por ejemplo, para convertir el número binario 10100112 a decimal, lo desarrollamos teniendo en cuenta el valor de cada bit:</p>
+
+        <p>1*2<sup>6</sup> + 0*2<sup>5</sup> + 1*2<sup>4</sup> + 0*2<sup>3</sup> + 0*2<sup>2</sup> + 1*2<sup>1</sup> + 1*2<sup>0</sup> = 83</p>
+        <p>1010011<sub>2</sub> = 83<sub>10</sub></p>
+
+        <h3>Ejercicio 4:</h3>
+        <p>Expresa, en el sistema decimal, los siguientes números binarios: 110111, 111000, 010101, 101010, 1111110.</p>
+
+        <h2>Sistema de numeración octal</h2>
+        <p>El inconveniente de la codificación binaria es que la representación de algunos números resulta muy larga. Por este motivo se utilizan otros sistemas de numeración que resulten más cómodos de escribir: el sistema octal y el sistema hexadecimal. Afortunadamente, resulta muy fácil convertir un número binario a octal o a hexadecimal.</p>
+
+        <p>En el sistema de numeración octal, los números se representan mediante ocho dígitos diferentes: 0, 1, 2, 3, 4, 5, 6 y 7. Cada dígito tiene, naturalmente, un valor distinto dependiendo del lugar que ocupen. El valor de cada una de las posiciones viene determinado por las potencias de base 8.</p>
+
+        <p>Por ejemplo, el número octal 273<sub>8</sub> tiene un valor que se calcula así:</p>
+
+        <p>2*8<sup>2</sup> + 7*8<sup>1</sup> + 3*8<sup>0</sup> = 2*64 + 7*8 + 3*1 = 187</p>
+        <p>273<sub>8</sub> = 187<sub>10</sub></p>
+
+        <h2>Conversión de un número decimal a octal</h2>
+        
+        <p>La conversión de un número decimal a octal se hace con la misma técnica que ya hemos utilizado en la conversión a binario, mediante divisiones sucesivas por 8 y colocando los restos obtenidos en orden inverso. Por ejemplo, para escribir en octal el número decimal 122<sub>10</sub> tendremos que hacer las siguientes divisiones:</p>
+
+        <p>122 : 8 = 15 | Resto: 2</p>
+        <p>15 : 8 = 1 | Resto: 7</p>
+        <p>1 : 8 = 0 | Resto: 1</p>
+
+        <p>Tomando los restos obtenidos en orden inverso tendremos la cifra octal:</p>
+
+        <p>122<sub>10</sub> = 172<sub>8</sub></p>
+
+        <h3>Ejercicio 5:</h3>
+        <p>Convierte los siguientes números decimales en octales: 63<sub>10</sub>, 513<sub>10</sub>, 119<sub>10</sub></p>
+
+        <h2>Conversión octal a decimal</h2>
+        <p>La conversión de un número octal a decimal es igualmente sencilla, conociendo el peso de cada posición en una cifra octal. Por ejemplo, para convertir el número 237<sub>8</sub> a decimal basta con desarrollar el valor de cada dígito:</p>
+
+        <p>2*8<sup>2</sup> + 3*8<sup>1</sup> + 7*8<sup>0</sup> = 128 + 24 + 7 = 159</p>
+        <p>237<sub>8</sub> = 159<sub>10</sub></p>
+
+    <h3>Ejercicio 6:</h3>
+
+    <p>Convierte al sistema decimal los siguientes números octales: 45<sub>8</sub>, 125<sub>8</sub>, 625<sub>8</sub></p>
+
+    <h2>Sistema de numeración hexadecimal</h2>
+
+    <p>En el sistema hexadecimal los números se representan con dieciséis símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E y F. Se utilizan los caracteres A, B, C, D, E y F representando las cantidades decimales 10, 11, 12, 13, 14 y 15 respectivamente, porque no hay dígitos mayores que 9 en el sistema decimal. El valor de cada uno de estos símbolos depende, como es lógico, de su posición, que se calcula mediante potencias de base 16.</p>
+
+    <p>Calculemos, a modo de ejemplo, el valor del número hexadecimal #1A3F:</p>
+
+    <p>#1A3F = 1*16<sup>3</sup> + A*16<sup>2</sup> + 3*16<sup>1</sup> + F*16<sup>0</sup></p>
+    <p>1*4096 + 10*256 + 3*16 + 15*1 = 6719</p>
+    <p>#1A3F = 6719<sub>10</sub></p>
+
+    <h3>Ejercicio 7:</h3>
+    <p>Expresa en el sistema decimal las siguientes cifras hexadecimales: #2BC5, #100, #1FF</p>
+
+    <p>Ensayemos, utilizando la técnica habitual de divisiones sucesivas, la conversión de un número decimal a hexadecimal. Por ejemplo, para convertir a hexadecimal del número 1735<sub>10</sub> será necesario hacer las siguientes divisiones:</p>
+
+    <p>1735 : 16 = 108 | Resto: 7</p>
+    <p>108 : 16 = 6 | Resto: C es decir, 12</p>
+    <p>6 : 16 = 0 | Resto: 6</p>
+
+    <p>De ahí que, tomando los restos en orden inverso, resolvemos el número en hexadecimal:</p>
+    <p>1735<sub>10</sub> = #6C7</p>
+
+    <h3>Ejercicio 8:</h3>
+    <p>Convierte al sistema hexadecimal los siguientes números decimales: 3519<sub>10</sub>, 1024<sub>10</sub>, 4095<sub>10</sub></p>
+
+    <h2>Conversión de números binarios a octales y viceversa</h2>
+    <p>Observa la tabla siguiente, con los siete primeros números expresados en los sistemas decimal, binario y octal:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DECIMAL</th>
+                <th>BINARIO</th>
+                <th>OCTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0 0 0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0 0 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0 1 0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>0 1 1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1 0 0</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>1 0 1</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>1 1 0</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>1 1 1</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+        </table>
+
+        <p>Cada dígito de un número octal se representa con tres dígitos en el sistema binario. Por tanto, el modo de convertir un número entre estos sistemas de numeración equivale a "expandir" cada dígito octal a tres dígitos binarios, o en "contraer" grupos de tres caracteres binarios a su correspondiente dígito octal.</p>
+
+        <p>Por ejemplo, para convertir el número binario 101001011<sub>2</sub> a octal tomaremos grupos de tres bits y los sustituiremos por su equivalente octal:</p>
+        
+        <p>101<sub>2</sub> = 5<sub>8</sub></p>
+        <p>001<sub>2</sub> = 1<sub>8</sub></p>
+        <p>011<sub>2</sub> = 3<sub>8</sub></p>
+        <p>y, de ese modo: 101001011<sub>2</sub> = 513<sub>8</sub></p>
+
+        <h3>Ejercicio 9:</h3>
+        <p>Convierte los siguientes números binarios en octales: 1101101<sub>2</sub>, 101110<sub>2</sub>, 11011011<sub>2</sub>, 101101011<sub>2</sub></p>
+
+        <p>La conversión de números octales a binarios se hace, siguiendo el mismo método, reemplazando cada dígito octal por los tres bits equivalentes. Por ejemplo, para convertir el número octal 750<sub>8</sub> a binario, tomaremos el equivalente binario de cada uno de sus dígitos:</p>
+
+        <p>7<sub>8</sub> = 111<sub>2</sub></p>
+        <p>5<sub>8</sub> = 101<sub>2</sub></p>
+        <p>0<sub>8</sub> = 000<sub>2</sub></p>
+        <p>y, por tanto: 750<sub>8</sub> = 111101000<sub>2</sub></p>
+
+        <h3>Ejercicio 10:</h3>
+        <p>Convierte los siguientes números octales en binarios: 25<sub>8</sub>, 372<sub>8</sub>, 2753<sub>8</sub></p>
+
+        <h2>Conversión de números binarios a hexadecimales y viceversa</h2>
+        <p>Del mismo modo que hallamos la correspondencia entre números octales y binarios, podemos establecer una equivalencia directa entre cada dígito hexadecimal y cuatro dígitos binarios, como se ve en la siguiente tabla:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>DECIMAL</th>
+                    <th>BINARIO</th>
+                    <th>HEXADECIMAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>0 0 0 0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0 0 0 1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>0 0 1 0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>0 0 1 1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>0 1 0 0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>0 1 0 1</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>0 1 1 0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0 1 1 1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>1 0 0 0</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1 0 0 1</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1 0 1 0</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>1 0 1 1</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>1 1 0 0</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>1 1 0 1</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>1 1 1 0</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>1 1 1 1</td>
+                    <td>F</td>
+                </tr>                
+            </tbody>
+        </table>
+       
+        <p>La conversión entre números hexadecimales y binarios se realiza "expandiendo" o "contrayendo" cada dígito hexadecimal a cuatro dígitos binarios. Por ejemplo, para expresar en hexadecimal el número binario 101001110011<sub>2</sub> bastará con tomar grupos de cuatro bits, empezando por la derecha, y reemplazarlos por su equivalente hexadecimal: </p>
+
+        <p>1010<sub>2</sub> = #A</p>
+        <p>0111<sub>2</sub> = #7</p>
+        <p>0011<sub>2</sub> = #3</p>
+        <p>y, por tanto: 101001110011<sub>2</sub> = #A73</p>
+
+        <p>En caso de que los dígitos binarios no formen grupos completos de cuatro dígitos, se deben añadir ceros a la izquierda hasta completar el último grupo. Por ejemplo:</p>
+        <p>101110<sub>2</sub> = 00101110<sub>2</sub> = #2E</p>
+
+        <h3>Ejercicio 11:</h3>
+
+        <p>Convierte a hexadecimales los siguientes números binarios: 1010100101011101010<sub>2</sub>, 111000011110000<sub>2</sub>, 1010000111010111<sub>2</sub></p>
+
+        <p>La conversión de números hexadecimales a binarios se hace del mismo modo, reemplazando cada dígito hexadecimal por los cuatro bits equivalentes de la tabla. Para convertir a binario, por ejemplo, el número hexadecimal #1F6 hallaremos en la tabla las siguientes equivalencias:</p>
+
+        <p>#1 = 0001<sub>2</sub></p>
+        <p>#F = 1111<sub>2</sub></p>
+        <p>#6 = 0110<sub>2</sub></p>
+        <p>y, por tanto: #1F6 = 000111110110<sub>2</sub></p>
+
+        <h3>Ejercicio 12:</h3>
+        <p>Convierte a binario los números hexadecimales siguientes: #7A5D, #1010, #8F8F</p>
+
+    </body>
+</html>

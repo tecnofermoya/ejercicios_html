@@ -1,0 +1,6 @@
+COMANDOS GITHUB
+git clone url de los archivos a clonar
+git add .
+git status
+git commit
+git push

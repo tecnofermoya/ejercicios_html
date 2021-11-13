@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Layout CSS básico</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <div id="contenedor">
+        <div id="header">
+            <h1>Estructura o Layout básico en CSS</h1>
+        </div>
+
+        <div id="menu">
+            <p class="centrado"><b>Navegación</b></p>
+            <ul>
+                <li><a href="#uno">Sección 1</a></li>
+                <li><a href="#dos">Sección 2</a></li>
+                <li><a href="#tres">Sección 3</a></li>
+                <li><a href="#footer">Pie</a></li>
+                <li><a href="http://google.es" target="_blank">Google</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            
+            <h2 id="uno">Diseño a 2 columnas con cabecera y pie de página</h2>
+
+            <p>El objetivo de este diseño es definir una estructura de página con cabecera y pie, un menú lateral de navegación y una zona de contenidos.</p>
+        
+            <p>La solución CSS se basa en el uso de la propiedad <b>float</b> para los elementos posicionados como el menú y los contenidos y el uso de la propiedad <b>clear</b> en el pie de página para evitar los solapamientos ocasionados por los elementos posicionados con <b>float</b>.</p>
+            
+            <img src="images/esquema.png" alt="Esquema general de la página">
+            
+            <p>En los estilos CSS anteriores se ha optado por desplazar tanto el menú como los contenidos hacia la izquierda de la página <b>(float: left)</b>. Sin embargo, en este caso también se podría desplazar el menú hacia la izquierda <b>(float:left)</b> y los contenidos hacia la derecha <b>(float: right)</b>.</p>
+            
+            <img src="images/propiedades.png" alt="Propiedades principales de los identificadores">
+            
+            <p>Si se indican la anchuras de los bloques que forman la página en porcentajes, el diseño final es dinámico. Para crear diseños de anchura fija, basta con establecer las anchuras de los bloques en píxel.</p>
+            
+            <h2 id="dos">Alturas/Anchuras máximas y mínimas</h2>
+            
+            <p>Cuando se diseña la estructura de una página web, se debe tomar la decisión de optar por un diseño de anchura fija o un diseño cuya anchura se adapta a la anchura de la ventana del navegador.</p>
+
+            <p>Sin embargo, la mayoría de las veces sería conveniente una solución intermedia: que la anchura de la página sea variable y se adapte a la anchura de la ventana del navegador, pero respetando ciertos límites. En otras palabras, que la anchura de la página no sea tan pequeña como para que no se puedan mostrar correctamente los contenidos y tampoco sea tan ancha como para que las líneas de texto no puedan leerse cómodamente.</p>
+
+            <p>CSS define cuatro propiedades que permiten limitar la anchura y altura mínima y máxima de cualquier elemento de la página. Las propiedades son <b>max-width, min-width, max-height y min-height</b>.</p>
+            
+            <p>Las propiedades que definen la altura y anchura máxima y mínima se pueden aplicar a cualquier elemento, aunque solamente suelen utilizarse para estructurar la página. En general, las propiedades más utilizadas son max-width y min-width, ya que no es muy habitual definir alturas máximas y mínimas.</p>
+
+            <p>Desafortunadamente, Internet Explorer 6 y las versiones anteriores no soportan ninguna de las cuatro propiedades sobre ningún elemento.</p>
+            
+            <h2 id="tres">Propiedades CSS necesarias en el diseño a 3 columnas con cabecera y pie de página</h2>
+            
+            <img src="images/prop_layout_complejo.png" alt="Propiedades principales para un layout complejo">
+        </div>
+
+        <div id="footer">
+            <p>Copyright 2021 (c) - Algunos derechos reservados</p>
+            <p>Web diseñada por <a href="https://fermoya.es" target="_blank">Fernando Martínez Moya</a></p>
+        </div>
+    </div>
+    </body>
+</html>

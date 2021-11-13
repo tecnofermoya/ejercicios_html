@@ -1,0 +1,29 @@
+html {
+    background: #888;
+}
+
+body {
+    background: #C1CFC0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px 20px 40px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead, tfoot {
+    background-color: #96D4D4;
+}
+
+tfoot {
+    font-style: italic;
+}
+
+td {
+    padding: 2px 20px;
+    text-align: center;
+}
